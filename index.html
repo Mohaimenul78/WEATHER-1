@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<title>WEATHER</title>
+</head>
+<body class="bg-black">
+  <div class="bg-blue-800 p-4 sm:flex sm:justify-between">
+      <div class="flex items-center">
+		<i class="fas fa-sun-cloud text-4xl mr-2 text-white"></i>
+		<p class="text-3xl text-white">WEATHER</p>
+	  </div>
+      <div class="">
+		  <p class="sm:text-right text-3xl text-white sm:mt-0 mt-2 ">8:40 <span>pm</span></p>
+		  <p class="text-white">Tuesday, November, 26, 2020</p>
+	  </div>
+  </div>
+
+  <div class="px-4 py-2 bg-blue-800 mt-2 flex justify-between">
+	  <p class="text-white">Current Weather condition</p>
+	  <i class="fas fa-sun text-3xl text-white animate-spin"></i>
+  </div>
+
+	<div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2  gap-4 p-4 bg-blue-700 duration-150">
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Temperature</p>
+				<i class="fal fa-temperature-low text-xl text-white animate-pulse"></i>
+			</div>
+			<div class=" h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">12 <sup class="mt-6">o</sup> C</p>
+			</div>	
+		</div>
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Humidity</p>
+				<i class="far fa-humidity text-xl text-white animate-pulse"></i>
+				
+			</div>
+			<div class=" h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">60%</p>
+			</div>	
+		</div>
+
+
+		<div class=" bg-blue-800 rounded-md shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Duw point</p>
+				<i class="fas fa-dewpoint text-xl text-white animate-pulse"></i>
+			</div>
+			<div class="h-24 flex justify-center items-center">
+            <p class=" text-2xl  text-white flex">12 <sup class="mt-6">o</sup> C</p>
+			</div>	
+		</div>
+
+
+
+		<div class=" bg-blue-800 rounded-md shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Rain</p>
+				<i class="fas fa-umbrella text-xl text-white animate-pulse"></i>
+			</div>
+			<div class="h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">0.0mm</p>
+			</div>	
+		</div>
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Rain rate</p>
+				<i class="far fa-raindrops text-xl text-white animate-pulse"></i>
+			</div>
+			<div class="h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">0.0mm/h</p>
+			</div>	
+		</div>
+
+		
+		<div class=" bg-blue-800 rounded-md  shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Evapotranspiration</p>
+				<i class="fas fa-water-rise text-xl text-white animate-pulse"></i>
+			</div>
+			<div class="h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">2.0mm</p>
+			</div>	
+		</div>
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md sm:col-span-2">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Wind</p>
+				<i class="fas fa-wind text-xl text-white animate-pulse"></i>
+			</div>
+			<div class="h-24 flex justify-center items-center">
+				<i class="fas fa-tachometer-slowest text-white text-3xl mr-2 "></i>
+            <p class=" text-2xl text-white flex">0.9 m/s <span class="ml-1">NW</span> </p>
+			</div>	
+		</div>
+
+		<div class=" bg-blue-800 rounded-md  shadow-md col-span-1">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Gust of wind</p>
+				<i class="fas fa-wind text-xl text-white animate-pulse"></i>
+			</div>
+			<div class=" h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">2.1 m/s</p>
+			</div>	
+		</div>
+
+		<div class=" bg-blue-800 rounded-md  shadow-md sm:col-span-3 col-span-2">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4 mb-2">
+				<p class="my-3 text-white">Rain 7 days</p>
+				<p class="text-white">Total 12.3mm </p>
+				
+			</div>
+			<div class=" h-24 grid grid-cols-7 gap-2 sm:gap-8">
+
+                <div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">0</p>
+					<div class="bg-blue-900 h-0 w-0 absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">0</p>
+					<div class="bg-blue-900 h-0 w-full absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">0</p>
+					<div class="bg-blue-900 h-0 w-full absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">2.3</p>
+					<div class="bg-blue-900 h-12 w-full absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">2</p>
+					<div class="bg-blue-900 h-10 w-full absolute z-10"></div>
+					
+				</div>
+
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">0</p>
+					<div class="bg-blue-900 h-0 w-full absolute z-10"></div>
+					
+				</div>
+
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">4</p>
+					<div class="bg-blue-900 h-16 w-full absolute z-10"></div>
+					
+				</div>                 
+			</div>	
+		</div>
+
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">A-pressure</p>
+				<i class="fas fa-tachometer-slowest text-xl text-white animate-pulse"></i>
+			</div>
+			<div class="h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">1010.9hpa</p>
+			</div>	
+		</div>
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">Solar radiation</p>
+				<i class="fas fa-sun text-xl text-white animate-pulse"></i>
+			</div>
+			<div class="h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">44w/m <sub>2</sub></p>
+			</div>	
+		</div>
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4">
+				<p class="my-3 text-white">UV index</p>
+				<i class="fas fa-sun text-xl text-white animate-pulse"></i>
+				
+			</div>
+			<div class="h-24 flex justify-center items-center">
+            <p class=" text-2xl text-white flex">0.0 Low</p>
+			</div>	
+		</div>
+
+         
+
+
+		<div class=" bg-blue-800 rounded-md  shadow-md sm:col-span-3 col-span-2">
+			<div class="border-b border-blue-500 flex justify-between items-center px-4 mb-2">
+				<p class="my-3 text-white">Evapotranspiration 7 days</p>
+				<p class="text-white">Total 12.3mm </p>
+				
+			</div>
+			<div class=" h-24 grid grid-cols-7 gap-2 sm:gap-8">
+
+                <div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">3.9</p>
+					<div class="bg-blue-900 h-20 w-full absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">1.4</p>
+					<div class="bg-blue-900 h-10 w-full absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">1.7</p>
+					<div class="bg-blue-900 h-12 w-full absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">1.3</p>
+					<div class="bg-blue-900 h-8 w-full absolute z-10"></div>
+					
+				</div>
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">2.6</p>
+					<div class="bg-blue-900 h-16 w-full absolute z-10"></div>
+					
+				</div>
+
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">2.6</p>
+					<div class="bg-blue-900 h-16 w-full absolute z-10"></div>
+					
+				</div>
+
+
+				<div class="h-full sm:w-1/2 w-full mx-auto flex flex-col-reverse relative">
+					<p class="absolute bottom-0 text-white left-1/2 transform -translate-x-1/2 z-20">.2</p>
+					<div class="bg-blue-900 h-4 w-full absolute z-10"></div>
+					
+				</div>                 
+			</div>	
+		</div>
+	</div>
+
+
+	<div class="p-4 bg-blue-800 mt-2 flex justify-between ">
+         <p class="text-white ">Fprecast 7days</p>
+		 <i class="fal fa-calendar-alt text-white"></i>
+	</div>
+
+
+    <div class="grid xl:grid-cols-9  lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-2 p-4 bg-blue-700">
+       
+		<div class=" bg-blue-800 w-full md:col-span-3 sm:col-span-2 col-span-1  rounded-md ">
+
+			<div class="border-b border-blue-500 p-4 mb-2">
+				<p class="text-white bor">Today</p>
+			</div>
+
+			<div class="flex p-4  border-b border-blue-500 h-48 ">
+               <div class="flex-1">
+				<i class="fas fa-sun-cloud text-5xl text-white	"></i>
+			   </div>
+               <div class="flex-1">
+				   <p class="text-2xl text-white">19 <sup>o</sup></p>
+				   <br>
+				   <p class="text-2xl text-white">17 <sup>o</sup></p>
+			   </div>
+               <div class="flex-1">
+				   <p class="text-2xl text-white">28 <span class="text-sm">m/s</span> NO </p>
+				   <div class="flex items-center">
+					<i class="fal fa-umbrella text-white mr-2"></i>
+					<p class="text-white">20 %</p>
+				   </div>
+				   <div class="flex items-center">
+					   <p class="text-white mr-2">UV 2</p>
+					   <i class="fas fa-stop text-green-800"></i>
+				   </div>
+			   </div>
+			</div>
+
+
+			<div class="flex justify-between p-4">
+				<div class="flex items-center">
+					<i class="fas fa-sunrise mr-2 text-white"></i>
+					<p class="text-white">5:52 am</p>
+				</div>
+
+				<div class="flex items-center">
+					<i class="far fa-sunset mr-2 text-white"></i>
+					<p class="text-white">5:32 am</p>
+				</div>
+			</div>
+
+		</div>
+
+		
+		<div class="bg-blue-800 p-4 ">
+			<div class="border-b border-blue-500 ">
+				<p class="text-white mb-4">Tomorow</p>
+			</div>
+			
+			<div class="border-b border-blue-500 h-48">
+				<div class="flex justify-between mt-3">
+					<i class="fas fa-clouds-sun text-white text-3xl"></i>
+					<div>
+						<p class="text-white">19 <sup>o</sup> </p>
+						<p class="text-white">17 <sup>o</sup> </p>
+					</div>
+				</div>
+				<div class="">
+					<div class=" ">
+						<p class="text-white">5.6m/s</p>
+					</div>
+					<div class="flex  items-center">
+						<i class="fal fa-umbrella text-white mr-2"></i>
+						<p class="text-white">25%</p>
+					</div>
+				</div>
+	
+				<div class="flex items-center ">
+					<p class="text-white mr-2">UV 2</p>
+					<i class="fas fa-stop text-green-800"></i>
+				</div>
+			</div>
+			
+			<div class="px-2 mt-2 flex justify-between lg:flex-col ">
+
+				<div class="flex items-center">
+					<i class="fas fa-sunrise mr-2 text-white"></i>
+					<p class="text-white text-sm">5:52 am</p>
+				</div>
+
+				<div class="flex items-center">
+					<i class="far fa-sunset text-white"></i>
+					<p class="text-white text-sm">5:32 am</p>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+
+
+			<div class="bg-blue-800 p-4 ">
+				<div class="border-b border-blue-500 ">
+					<p class="text-white mb-4">Thursday 23</p>
+				</div>
+				
+				<div class="border-b border-blue-500 h-48">
+					<div class="flex justify-between mt-3">
+						<i class="fas fa-clouds-sun text-white text-3xl"></i>
+						<div>
+							<p class="text-white">19 <sup>o</sup> </p>
+							<p class="text-white">17 <sup>o</sup> </p>
+						</div>
+					</div>
+					<div class="">
+						<div class=" ">
+							<p class="text-white">5.6m/s</p>
+						</div>
+						<div class="flex  items-center">
+							<i class="fal fa-umbrella text-white mr-2"></i>
+							<p class="text-white">25%</p>
+						</div>
+					</div>
+		
+					<div class="flex items-center ">
+						<p class="text-white mr-2">UV 2</p>
+						<i class="fas fa-stop text-green-800"></i>
+					</div>
+				</div>
+				
+				<div class="px-2 mt-2 flex justify-between lg:flex-col ">
+	
+					<div class="flex items-center">
+						<i class="fas fa-sunrise mr-2 text-white"></i>
+						<p class="text-white text-sm">5:52 am</p>
+					</div>
+	
+					<div class="flex items-center">
+						<i class="far fa-sunset text-white"></i>
+						<p class="text-white text-sm">5:32 am</p>
+					</div>
+				</div>
+				</div>
+
+				
+
+
+
+
+				<div class="bg-blue-800 p-4 ">
+					<div class="border-b border-blue-500 ">
+						<p class="text-white mb-4">Friday 24</p>
+					</div>
+					
+					<div class="border-b border-blue-500 h-48">
+						<div class="flex justify-between mt-3">
+							<i class="fas fa-clouds-sun text-white text-3xl"></i>
+							<div>
+								<p class="text-white">19 <sup>o</sup> </p>
+								<p class="text-white">17 <sup>o</sup> </p>
+							</div>
+						</div>
+						<div class="">
+							<div class=" ">
+								<p class="text-white">5.6m/s</p>
+							</div>
+							<div class="flex  items-center">
+								<i class="fal fa-umbrella text-white mr-2"></i>
+								<p class="text-white">25%</p>
+							</div>
+						</div>
+			
+						<div class="flex items-center ">
+							<p class="text-white mr-2">UV 2</p>
+							<i class="fas fa-stop text-green-800"></i>
+						</div>
+					</div>
+					
+					<div class="px-2 mt-2 flex justify-between lg:flex-col ">
+		
+						<div class="flex items-center">
+							<i class="fas fa-sunrise mr-2 text-white"></i>
+							<p class="text-white text-sm">5:52 am</p>
+						</div>
+		
+						<div class="flex items-center">
+							<i class="far fa-sunset text-white"></i>
+							<p class="text-white text-sm">5:32 am</p>
+						</div>
+					</div>
+					</div>
+
+					
+
+
+					<div class="bg-blue-800 p-4 ">
+						<div class="border-b border-blue-500 ">
+							<p class="text-white mb-4">Saturday 25</p>
+						</div>
+						
+						<div class="border-b border-blue-500 h-48">
+							<div class="flex justify-between mt-3">
+								<i class="fas fa-clouds-sun text-white text-3xl"></i>
+								<div>
+									<p class="text-white">19 <sup>o</sup> </p>
+									<p class="text-white">17 <sup>o</sup> </p>
+								</div>
+							</div>
+							<div class="">
+								<div class=" ">
+									<p class="text-white">5.6m/s</p>
+								</div>
+								<div class="flex  items-center">
+									<i class="fal fa-umbrella text-white mr-2"></i>
+									<p class="text-white">25%</p>
+								</div>
+							</div>
+				
+							<div class="flex items-center ">
+								<p class="text-white mr-2">UV 2</p>
+								<i class="fas fa-stop text-green-800"></i>
+							</div>
+						</div>
+						
+						<div class="px-2 mt-2 flex justify-between lg:flex-col ">
+			
+							<div class="flex items-center">
+								<i class="fas fa-sunrise mr-2 text-white"></i>
+								<p class="text-white text-sm">5:52 am</p>
+							</div>
+			
+							<div class="flex items-center">
+								<i class="far fa-sunset text-white"></i>
+								<p class="text-white text-sm">5:32 am</p>
+							</div>
+						</div>
+						</div>
+
+						
+
+						<div class="bg-blue-800 p-4 ">
+							<div class="border-b border-blue-500 ">
+								<p class="text-white mb-4">Sunday 26</p>
+							</div>
+							
+							<div class="border-b border-blue-500 h-48">
+								<div class="flex justify-between mt-3">
+									<i class="fas fa-clouds-sun text-white text-3xl"></i>
+									<div>
+										<p class="text-white">19 <sup>o</sup> </p>
+										<p class="text-white">17 <sup>o</sup> </p>
+									</div>
+								</div>
+								<div class="">
+									<div class=" ">
+										<p class="text-white">5.6m/s</p>
+									</div>
+									<div class="flex  items-center">
+										<i class="fal fa-umbrella text-white mr-2"></i>
+										<p class="text-white">25%</p>
+									</div>
+								</div>
+					
+								<div class="flex items-center ">
+									<p class="text-white mr-2">UV 2</p>
+									<i class="fas fa-stop text-green-800"></i>
+								</div>
+							</div>
+							
+							<div class="px-2 mt-2 flex justify-between lg:flex-col ">
+				
+								<div class="flex items-center">
+									<i class="fas fa-sunrise mr-2 text-white"></i>
+									<p class="text-white text-sm">5:52 am</p>
+								</div>
+				
+								<div class="flex items-center">
+									<i class="far fa-sunset text-white"></i>
+									<p class="text-white text-sm">5:32 am</p>
+								</div>
+							</div>
+							</div>
+
+							
+
+
+							<div class="bg-blue-800 p-4 ">
+								<div class="border-b border-blue-500 ">
+									<p class="text-white mb-4">Monday 28</p>
+								</div>
+								
+								<div class="border-b border-blue-500 h-48">
+									<div class="flex justify-between mt-3">
+										<i class="fas fa-clouds-sun text-white text-3xl"></i>
+										<div>
+											<p class="text-white">19 <sup>o</sup> </p>
+											<p class="text-white">17 <sup>o</sup> </p>
+										</div>
+									</div>
+									<div class="">
+										<div class=" ">
+											<p class="text-white">5.6m/s</p>
+										</div>
+										<div class="flex  items-center">
+											<i class="fal fa-umbrella text-white mr-2"></i>
+											<p class="text-white">25%</p>
+										</div>
+									</div>
+						
+									<div class="flex items-center ">
+										<p class="text-white mr-2">UV 2</p>
+										<i class="fas fa-stop text-green-800"></i>
+									</div>
+								</div>
+								
+								<div class="px-2 mt-2 flex justify-between lg:flex-col ">
+					
+									<div class="flex items-center">
+										<i class="fas fa-sunrise mr-2 text-white"></i>
+										<p class="text-white text-sm">5:52 am</p>
+									</div>
+					
+									<div class="flex items-center">
+										<i class="far fa-sunset text-white"></i>
+										<p class="text-white text-sm">5:32 am</p>
+									</div>
+								</div>
+								</div>
+	</div>
+
+	
+	<div class="px-4 py-2 bg-blue-800 mt-2 flex justify-between">
+		<p class="text-white">Current Weather </p>
+		<i class="fas fa-sun text-3xl text-white animate-spin"></i>
+	</div>
+
+
+
+
+</body>
+</html>
